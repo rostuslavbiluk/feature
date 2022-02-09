@@ -10,7 +10,7 @@ class MoneyTypeFeature extends BaseFeature
     protected $name = 'money';
 
     protected $mockButton = [
-        'url'    => 'https://spasibosberbank.ru/lottery',
+        'url'    => '/',
         'title'  => 'на главную',
         'color'  => '#f5df14',
         'target' => false,
@@ -22,7 +22,7 @@ class MoneyTypeFeature extends BaseFeature
     ];
 
     protected $mockImage = [
-        'src' => 'https://spasibosberbank.ru/upload/iblock/dad/stoloto_offer_cover_new_m10-_2_-_1_-_1_.jpg',
+        'src' => '/',
     ];
 
     public function getOptions(): array
@@ -36,8 +36,8 @@ class MoneyTypeFeature extends BaseFeature
 
             $options += [
                 'time'        => $this->mockTime,
-                'title'       => 'Жаль, но Лотереи временно не работают',
-                'description' => 'Чуточку терпения, скоро мы всё починим',
+                'title'       => 'Title',
+                'description' => 'Description',
                 'image'       => $this->mockImage,
                 'button'      => $this->mockButton,
             ];
