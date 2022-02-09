@@ -10,7 +10,7 @@ class ServiceAllFeature extends BaseFeature
     protected $name = 'all';
 
     protected $mockButton = [
-        'url'    => 'https://spasibosberbank.ru/lottery',
+        'url'    => '/',
         'title'  => 'на главную',
         'color'  => '#f5df14',
         'target' => false,
@@ -22,7 +22,7 @@ class ServiceAllFeature extends BaseFeature
     ];
 
     protected $mockImage = [
-        'src' => 'https://spasibosberbank.ru/upload/iblock/dad/stoloto_offer_cover_new_m10-_2_-_1_-_1_.jpg',
+        'src' => '/',
     ];
 
     public function getOptions(): array
@@ -35,8 +35,8 @@ class ServiceAllFeature extends BaseFeature
         if (!$isActive) {
             $options += [
                 'time'        => $this->mockTime,
-                'title'       => 'Жаль, но Лотереи временно не работают',
-                'description' => 'Чуточку терпения, скоро мы всё починим',
+                'title'       => 'title',
+                'description' => 'description',
                 'image'       => $this->mockImage,
                 'button'      => $this->mockButton,
             ];
